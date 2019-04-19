@@ -5,6 +5,7 @@
 
 body {
     background-color: darkcyan;
+    padding: 20px;
 }
 
 .label {
@@ -24,4 +25,11 @@ body {
 
 .gamedesign {
     background-color: #7C334B;
+}
+
+.video {
+    width: 100%;
+    min-width: 2px;
+    background-size: 100%;
+    border-radius: 10px;
 }
