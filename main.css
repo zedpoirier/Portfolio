@@ -1,0 +1,27 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+.label {
+    border-radius: 4px;
+    font-family: Helvetica;
+    font-size: 0.9em;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    line-height: normal;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: inline-block;
+    margin-bottom: 0.3em;
+    margin-right: 0.3em;
+}
+
+.gamedesign {
+    background-color: #7C334B;
+}
