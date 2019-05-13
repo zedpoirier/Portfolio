@@ -3,9 +3,48 @@
     margin: 0px;
 }
 
+.about {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 15px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "labels labels"
+        "media title"
+        "media desc"
+        "media bullets";
+}
+
 body {
-    background-color: darkcyan;
-    padding: 20px;
+    background-image: url("http://beaunicorn.tv/imgs/background3");
+    background-repeat: repeat-y repeat-x;
+    padding: 15px;
+    color: #BBB;
+}
+
+.bullets {
+    grid-area: bullets;
+    padding-left: 20px;
+}
+
+.container {
+    max-width: 770px;
+    margin: auto;
+}
+
+.desc {
+    grid-area: desc;
+}
+
+h1 {
+    font-size: 38px;
+    font-family: monospace;
+}
+
+h2 {
+    font-size:30px;
+    font-family: monospace;
 }
 
 .label {
@@ -21,15 +60,122 @@ body {
     display: inline-block;
     margin-bottom: 0.3em;
     margin-right: 0.3em;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.gamedesign {
-    background-color: #7C334B;
+.labelCamera {
+    background-color:#b8860b;
 }
 
-.video {
+.labelComposition {
+    background-color: #ba4d00;
+}
+
+.labelDesign {
+    background-color: #771F2A;
+}
+
+.labelModelling {
+    background-color: #008b8b;
+}
+
+.labelScripting {
+    background-color: #6B3B68;
+}
+
+.labelShaders {
+    background-color: #563227;
+}
+
+.labelVFX {
+    background-color: #2b874c;
+}
+
+.labels {
+    grid-area: labels;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.piece {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title title"
+        "labels labels"
+        "media media"
+        "desc desc"
+        "bullets bullets";
+}
+
+.pieceAlt {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title title"
+        "labels labels"
+        "media media"
+        "desc desc"
+        "bullets bullets";
+}
+
+.media {
+    grid-area: media;
+    height: auto;
     width: 100%;
-    min-width: 2px;
-    background-size: 100%;
+    min-width: 200px;
     border-radius: 10px;
+    border: 2px solid gray;
+    margin-bottom: 15px;
+}
+
+.title {
+    grid-area: title;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 790px){
+    .about {
+        grid-template-columns: 2fr 3fr;
+        grid-column-gap: 15px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "media title"
+            "media labels"
+            "media desc"
+            "media bullets";
+    }
+    
+    .piece {
+        grid-template-columns: 4fr 3fr;
+        grid-column-gap: 15px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "media title"
+            "media labels"
+            "media desc"
+            "media bullets"
+            "media ......";
+    }
+    
+    .pieceAlt {
+        grid-template-columns: 3fr 4fr;
+        grid-column-gap: 15px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "title media"
+            "labels media"
+            "desc media"
+            "bullets media"
+            "....... media";
+    }
+        
 }
