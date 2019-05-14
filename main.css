@@ -10,10 +10,10 @@
     grid-column-gap: 15px;
     grid-template-rows: auto;
     grid-template-areas: 
+        "title title"
         "labels labels"
-        "media title"
-        "media desc"
-        "media bullets";
+        "media media"
+        "bullets bullets";
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 
 .container {
     max-width: 770px;
-    margin: auto;
+    
 }
 
 .desc {
@@ -58,7 +58,7 @@ h2 {
     padding-left: 6px;
     padding-right: 6px;
     display: inline-block;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5em;
     margin-right: 0.3em;
     box-shadow: 3px 4px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -96,6 +96,9 @@ h2 {
     grid-area: labels;
 }
 
+li {
+}
+
 p {
     text-align: justify;
     font-size: 18px;
@@ -108,22 +111,8 @@ p {
     grid-template-rows: auto;
     grid-template-areas: 
         "title title"
-        "labels labels"
         "media media"
-        "desc desc"
-        "bullets bullets";
-}
-
-.pieceAlt {
-    margin-bottom: 15px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "title title"
         "labels labels"
-        "media media"
-        "desc desc"
         "bullets bullets";
 }
 
@@ -144,38 +133,23 @@ p {
 
 @media screen and (min-width: 790px){
     .about {
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 3fr 4fr;
         grid-column-gap: 15px;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr 2fr;
         grid-template-areas: 
             "media title"
             "media labels"
-            "media desc"
             "media bullets";
     }
     
     .piece {
-        grid-template-columns: 4fr 3fr;
-        grid-column-gap: 15px;
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "media title"
-            "media labels"
-            "media desc"
-            "media bullets"
-            "media ......";
-    }
-    
-    .pieceAlt {
         grid-template-columns: 3fr 4fr;
         grid-column-gap: 15px;
         grid-template-rows: auto;
         grid-template-areas: 
             "title media"
             "labels media"
-            "desc media"
-            "bullets media"
-            "....... media";
+            "bullets media";
     }
         
 }
