@@ -65,6 +65,13 @@ h2 {
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.alt {
+    display: block;
+    float: left;
+    clear: both;
+    
+}
+
 .labelCamera {
     background-color:#b8860b;
 }
@@ -145,12 +152,17 @@ p {
             "media .....";
     }
     
+    .alt {
+        clear: none;
+    }
+    
     .container {
         min-width: 800px;
     }
     
     .label {
         font-size: 14px;
+        display: inline-block;
     }
     
     .piece {
