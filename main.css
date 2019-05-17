@@ -23,8 +23,15 @@ a {
     grid-template-rows: auto;
     grid-template-areas: 
         "title title"
-        "media bullets"
-        "labels labels";
+        "media labels"
+        "bullets bullets";
+}
+
+.altLabel {
+    display: block;
+    float: left;
+    clear: both;
+    margin: 0px;
 }
 
 body {
@@ -134,6 +141,10 @@ p {
         "media"
         "labels"
         "bullets";
+}
+
+.mainLabels {
+    margin: 0px;
 }
 
 .media {
