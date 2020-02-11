@@ -22,9 +22,11 @@ a {
     grid-column-gap: 15px;
     grid-template-rows: auto;
     grid-template-areas: 
-        "title title"
+        "media title"
         "media labels"
-        "bullets bullets";
+        "media ......"
+        "bullets bullets"
+        "connect connect";
 }
 
 .altLabel {
@@ -37,13 +39,19 @@ a {
 body {
     background-image: url("http://beaunicorn.tv/imgs/background3");
     background-repeat: repeat-y repeat-x;
-    padding: 15px;
+    padding: 10px;
     color: #BBB;
 }
 
 .bullets {
     grid-area: bullets;
-    padding-left: 20px;
+    padding-left: 0px;
+}
+
+.connect{
+    grid-area: connect;
+    padding-top: 5px;
+    
 }
 
 .contact {
@@ -51,7 +59,7 @@ body {
 }
 
 .container {
-    max-width: 450px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     
@@ -62,7 +70,7 @@ body {
 }
 
 h1 {
-    font-size: 38px;
+    font-size: 36px;
     font-family: monospace;
 }
 
@@ -117,7 +125,7 @@ h2 {
 
 .labels {
     grid-area: labels;
-    margin: auto;
+
 }
 
 li {
@@ -138,8 +146,8 @@ p {
     align-items: center;
     grid-template-areas: 
         "title"
-        "media"
         "labels"
+        "media"
         "bullets";
 }
 
@@ -161,11 +169,10 @@ p {
 .title {
     grid-area: title;
     padding-bottom: 5px;
-    text-align: center;
     
 }
 
-@media only screen and (min-width: 790px){
+@media only screen and (min-width: 900px){
     .about {
         grid-template-columns: 3fr 4fr;
         grid-column-gap: 15px;
@@ -174,7 +181,8 @@ p {
             "media title"
             "media labels"
             "media bullets"
-            "media .....";
+            "media ..."
+            "connect connect";
     }
     
     .altLabel {
@@ -182,12 +190,13 @@ p {
     }
     
     .container {
-        min-width: 800px;
+        max-width: 900px;
     }
     
     .label {
         font-size: 14px;
         display: inline-block;
+        float: left;
     }
     
 
