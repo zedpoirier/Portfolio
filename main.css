@@ -22,7 +22,7 @@ a {
     grid-column-gap: 15px;
     grid-template-rows: auto;
     grid-template-areas: 
-        "media title"
+        "title title"
         "media labels"
         "bullets bullets"
         "connect connect";
