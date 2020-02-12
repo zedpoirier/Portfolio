@@ -24,7 +24,6 @@ a {
     grid-template-areas: 
         "media title"
         "media labels"
-        "media ......"
         "bullets bullets"
         "connect connect";
 }
@@ -70,7 +69,7 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     font-family: monospace;
 }
 
@@ -182,7 +181,7 @@ p {
             "media labels"
             "media bullets"
             "media ..."
-            "connect connect";
+            "media connect";
     }
     
     .altLabel {
