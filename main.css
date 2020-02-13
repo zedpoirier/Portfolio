@@ -169,6 +169,7 @@ li {
 p {
     font-size: 18px;
     font-family: Helvetica;
+    text-shadow:  0px 4px rgba(0, 0, 0, 0.2);
 }
 
 .piece {
@@ -202,6 +203,7 @@ p {
 .title {
     grid-area: title;
     padding-bottom: 5px;
+    text-shadow:  0px 4px rgba(0, 0, 0, 0.2);
     
 }
 
