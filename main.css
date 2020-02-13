@@ -193,7 +193,6 @@ p {
     grid-area: media;
     height: auto;
     width: 100%;
-    min-width: 200px;
     border-radius: 10px;
     border: 2px solid gray;
     margin-bottom: 15px;
