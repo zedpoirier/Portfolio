@@ -95,7 +95,7 @@ h2 {
 }
 
 .icon {
-    height: 100px;
+    height: 80px;
     width: auto;
     margin: auto;
 }
@@ -108,7 +108,7 @@ h2 {
     grid-template-rows: auto;
     align-items: center;
     grid-template-areas: 
-        "icon icon icon";
+        "icon icon icon icon";
 }
 
 .label {
@@ -164,6 +164,10 @@ h2 {
 li {
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.link {
+    text-decoration: underline;
 }
 
 p {
@@ -240,6 +244,10 @@ p {
     
     h1 {
         font-size: 40px;
+    }
+    
+    .icon {
+        height: 100px;
     }
     
 
