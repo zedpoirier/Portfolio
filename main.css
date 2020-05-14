@@ -84,6 +84,7 @@ body {
     grid-area: desc;
 }
 
+
 h1 {
     font-size: 30px;
     font-family: monospace;
@@ -132,24 +133,24 @@ h2 {
     background-color:#b8860b;
 }
 
-.labelComposition {
-    background-color: #ba4d00;
-}
-
 .labelDesign {
     background-color: #771F2A;
 }
 
 .labelModelling {
-    background-color: #008b8b;
-}
-
-.labelScripting {
     background-color: #6B3B68;
 }
 
-.labelShaders {
-    background-color: #563227;
+.labelLighting {
+    background-color:#b8860b;
+}
+
+.labelScripting {
+    background-color: #008b8b;
+}
+
+.labelShader {
+    background-color: #ba4d00;
 }
 
 .labelVFX {
