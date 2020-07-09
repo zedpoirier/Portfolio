@@ -109,7 +109,7 @@ h2 {
     grid-template-rows: auto;
     align-items: center;
     grid-template-areas: 
-        "icon icon icon icon";
+        "icon icon icon icon icon";
 }
 
 .label {
