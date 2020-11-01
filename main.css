@@ -52,7 +52,7 @@ a:hover{
 }
 
 body {
-    background-image: url("http://beaunicorn.tv/imgs/background3");
+    background-image: url(background.png);
     background-repeat: repeat-y repeat-x;
     padding: 10px;
     color: #BBB;
@@ -96,7 +96,7 @@ h2 {
 }
 
 .icon {
-    height: 80px;
+    height: 60px;
     width: auto;
     margin: auto;
 }
