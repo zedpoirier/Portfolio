@@ -137,11 +137,11 @@ h2 {
     background-color: #771F2A;
 }
 
-.labelModelling {
+.labelPipeline {
     background-color: #6B3B68;
 }
 
-.labelLighting {
+.labelTooling {
     background-color:#b8860b;
 }
 
@@ -210,6 +210,11 @@ p {
     padding-bottom: 5px;
     text-shadow:  0px 4px rgba(0, 0, 0, 0.2);
     
+}
+
+.subtitle {
+    padding-bottom: 5px;
+    text-shadow:  0px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (min-width: 900px){
