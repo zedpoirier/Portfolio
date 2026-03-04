@@ -109,7 +109,14 @@ h2 {
     grid-template-rows: auto;
     align-items: center;
     grid-template-areas: 
-        "icon icon icon icon icon";
+        "icon icon icon icon icon icon";
+}
+
+.tagg {
+    width: auto;
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
 }
 
 .label {
