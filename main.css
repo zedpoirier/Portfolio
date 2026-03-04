@@ -267,10 +267,9 @@ p {
         grid-template-rows: auto;
         align-items: start;
         grid-template-areas: 
-            "title media"
+            "title ....."
             "labels media"
-            "bullets media"
-            "..... media";
+            "bullets media";
     }
         
 }
