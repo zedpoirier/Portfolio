@@ -86,13 +86,16 @@ body {
 
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-family: monospace;
+    color: white;
 }
 
 h2 {
-    font-size:30px;
+    font-size:28px;
     font-family: monospace;
+    font-style: italic;
+    color: white;
 }
 
 .icon {
@@ -257,6 +260,10 @@ p {
     
     h1 {
         font-size: 40px;
+    }
+
+    h2 {
+        font-size:26px;
     }
     
     .icon {
