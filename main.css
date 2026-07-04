@@ -156,6 +156,15 @@ h2 {
         "icon icon icon icon icon icon";
 }
 
+.icon {
+    transition: opacity 0.15s ease, filter 0.15s ease;
+}
+
+a:hover .icon {
+    opacity: 0.85;
+    filter: brightness(1.4) invert(0.4);
+}
+
 .tagg {
     width: auto;
     margin: auto;
