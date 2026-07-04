@@ -314,14 +314,16 @@ p {
         display: table;
         clear: both;
     }
+    
     .filter-buttons {
         clear: both;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         margin-bottom: 15px;
         padding-top: 4px;
         padding-bottom: 4px;
-        /* remove overflow: hidden */
     }
 
     .filter-group .filter-btn {
