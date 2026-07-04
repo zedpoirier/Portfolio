@@ -309,12 +309,6 @@ p {
         display: inline-block;
     }
 
-    .filter-buttons::after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-    
     .filter-buttons {
         clear: both;
         display: flex;
