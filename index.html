@@ -15,22 +15,16 @@
     <meta name="description" content="A brief sampling of Zed's work.">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script src="filter.js" defer></script>
 </head>
 <body> 
     <div class="container">
         <div class="about">
-            <img src="zed4.jpg" class="media">
+            <img src="zed4.jpg" class="media profile-img">
             <h1 class="title">Zed Poirier</h1><br>
-            <div class="labels mainLabels">
-                <span class="label altLabel labelShader">Shaders</span>
-                <span class="label altLabel labelVFX">Visual Effects</span>
-                <span class="label altLabel labelDesign">Design</span>
-                <span class="label altLabel labelCoding">Coding</span>
-                <span class="label altLabel labelTooling">Tooling</span>
-                <span class="label altLabel labelPipeline">3D Pipeline</span>
-            </div>
+            <div class="labels mainLabels"> </div>
             <div class="bullets">
-                <h2 class="subtitle"> Technical Artist & Realtime VFX Specialist</h2><br> 
+                <h2 class="subtitle">Technical Artist &amp; <span class="mobile-break">Realtime VFX Specialist</span></h2>
                 <p>Senior level experience with a strong focus on stylized gameplay clarity, shader systems, and performant visual effects across Unity, Unreal, and custom rendering workflows.</p><br>
                 <p>I specialize in the space where art direction, player readability, and technical problem-solving intersect. Building shaders, gameplay-driven VFX, and production-ready tools that elevate both visual impact and iteration speed. My recent work has centered on stylized effects, VR/mobile optimization, and close collaboration with art and engineering teams to solve complex visual challenges.</p><br>
                 <p>Please reach out via email (button below) and tell me all about the weird shaders or fancy particles in your latest project!</p>
@@ -73,11 +67,46 @@
             </div>
         </div>
         
-        <div id="projects" class="bar">
-                <a href="#projects">PROJECTS</a>
-        </div>
         
-        <div class="piece">
+        <div id="projects" class="bar">
+            <a href="#projects">ALL  PROJECTS</a>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="filter-buttons">
+            <div class="filter-group">
+                <button class="filter-btn label" data-filter="all" style="background-color:#444;">All</button>
+                <button class="filter-btn label" data-filter="professional" style="background-color:#444;">Professional</button>
+                <button class="filter-btn label" data-filter="personal" style="background-color:#444;">Personal</button>
+            </div>
+            <div class="filter-group">
+                <button class="filter-btn label labelVFX" data-filter="labelVFX">VFX</button>
+                <button class="filter-btn label labelShader" data-filter="labelShader">Shaders</button>
+                <button class="filter-btn label labelDesign" data-filter="labelDesign">Design</button>
+                <button class="filter-btn label labelCoding" data-filter="labelCoding">Coding</button>
+                <button class="filter-btn label labelTooling" data-filter="labelTooling">Tooling</button>
+                <button class="filter-btn label labelPipeline" data-filter="labelPipeline">3D Pipeline</button>
+            </div>
+        </div>
+
+        <!-- 
+        <div class="piece" data-category="professional">
+            <h2 class="title">Rust Ltd.</h2>
+            <video loop="loop" class="media" autoplay muted playsinline>
+                <source src="Gifs/Redacted%20Gifs.mp4" type="video/mp4">
+            </video>
+            <div class="labels">
+                <span class="label labelVFX">Visual Effects</span>
+                <span class="label labelShader">Shaders</span>
+                <span class="label labelPipeline">3D Pipeline</span>
+            </div>
+           <div class="bullets">
+               <p>I'm currently contracted with Rust Ltd. as a VFX Artist on H3VR2, the highly anticipated sequel to Hot Dogs, Horseshoes & Hand Grenades — one of the most beloved and technically ambitious VR shooters ever made. Working within a muted-realist aesthetic, I've been crafting performant real-time VFX with a strong focus on texture discipline and rendering efficiency. This includes building procedural flipbook pipelines using Blender and Material Maker, packing multiple visual elements into single VFX cards to minimise overdraw, and baking bloom directly into textures to eliminate post-processing overhead without sacrificing visual quality. </p><br>
+            </div>
+        </div>
+        -->
+        
+        <div class="piece" data-category="professional">
             <h2 class="title">Cloudhead Games</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
                 <source src="Gifs/Redacted%20Gifs.mp4" type="video/mp4">
@@ -95,7 +124,7 @@
             </div>
         </div>
 
-        <div class="piece">
+        <div class="piece" data-category="professional">
             <h2 class="title">God of Riffs (VR)</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
                 <source src="Gifs/godofriffs2.mp4" type="video/mp4">
@@ -116,7 +145,7 @@
             </div>
         </div>
 
-        <div class="piece">
+        <div class="piece" data-category="professional personal">
             <h2 class="title">Shader Playground</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
                 <source src="Gifs/shaders.mp4" type="video/mp4">
@@ -124,6 +153,7 @@
             <div class="labels">
                 <span class="label labelShader">Shaders</span>
                 <span class="label labelCoding">Coding</span>
+                <span class="label labelVFX">Visual Effects</span>
                 <span class="label labelTooling">Tooling</span>
             </div>
            <div class="bullets">
@@ -132,7 +162,7 @@
             </div>
         </div>
         
-        <div class="piece">
+        <div class="piece" data-category="personal">
             <h2 class="title">Cylindris</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
                 <source src="Gifs/cylindris2.mp4" type="video/mp4">
@@ -152,7 +182,7 @@
             </div>
         </div>
         
-        <div class="piece">
+        <div class="piece" data-category="professional">
             <h2 class="title">Civic Story</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
                 <source src="Gifs/peopoli.mov" type="video/mp4">
@@ -171,7 +201,7 @@
             </div>
         </div>
         
-        <div class="piece">
+        <div class="piece" data-category="professional">
             <h2 class="title">Seasonspree</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
                 <source src="Gifs/seasonspree.mov" type="video/mp4">
@@ -189,8 +219,25 @@
                </a>
             </div>
         </div>
-        
-        <div class="piece">
+
+        <!--
+        <div class="piece" data-category="professional">
+            <h2 class="title">Battle Goat</h2>
+            <video loop="loop" class="media" autoplay muted playsinline>
+                <source src="Gifs/Redacted%20Gifs.mp4" type="video/mp4">
+            </video>
+            <div class="labels">
+                <span class="label labelVFX">Visual Effects</span>
+                <span class="label labelShader">Shaders</span>
+                <span class="label labelPipeline">3D Pipeline</span>
+            </div>
+           <div class="bullets">
+               <p>At BattleGoat Studios I contributed technical art and shader work to Galactic Ruler, a sci-fi grand strategy title and spin-off of the Supreme Ruler franchise. A personal highlight was authoring a 4D noise-based shader to animate seamless, continuously flowing star surfaces for celestial bodies — a technically interesting problem that required thinking carefully about how noise functions behave across four dimensions to avoid visible tiling or repetition. I also implemented VFX trigger systems directly in C++ within BattleGoat's custom proprietary engine, and researched art pipeline workflows for integrating assets into their engine-native production environment. </p><br>
+            </div>
+        </div>
+        -->
+
+        <div class="piece" data-category="personal">
             <h2 class="title">Flicker VR</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
                 <source src="Gifs/flicker.mp4" type="video/mp4">
@@ -209,7 +256,7 @@
             </div>
         </div>
         
-        <div class="piece">
+        <div class="piece" data-category="personal">
             <h2 class="title">Dust Bowl Plinko</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
                 <source src="Gifs/Plinko.mp4" type="video/mp4">
