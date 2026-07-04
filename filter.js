@@ -10,7 +10,7 @@ buttons.forEach(btn => {
 
     // Update the projects header text
     if (filter === 'all') {
-      projectsHeader.textContent = 'ALL PROJECTS';
+      projectsHeader.textContent = 'ALL  PROJECTS';
     } else {
       projectsHeader.textContent = btn.textContent.trim().toUpperCase();
     }
