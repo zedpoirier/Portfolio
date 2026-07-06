@@ -27,7 +27,7 @@
                 <h2 class="subtitle">Technical Artist &amp; <span class="mobile-break">Realtime VFX Specialist</span></h2>
                 <p>Senior level experience with a strong focus on stylized gameplay clarity, shader systems, and performant visual effects across Unity, Unreal, and custom rendering workflows.</p><br>
                 <p>I specialize in the space where art direction, player readability, and technical problem-solving intersect. Building shaders, gameplay-driven VFX, and production-ready tools that elevate both visual impact and iteration speed. My recent work has centered on stylized effects, VR/mobile optimization, and close collaboration with art and engineering teams to solve complex visual challenges.</p><br>
-                <p>Please reach out via email (button below) and tell me all about the weird shaders or fancy particles in your latest project!</p>
+                <p>Please reach out via email (button below) and tell me all about the weird shaders or tricky particles in your latest project!</p>
             </div>
             <div id="connect" class="bar">
                 <a href="#connect">CONNECT</a>
@@ -82,18 +82,17 @@
             <div class="filter-group">
                 <button class="filter-btn label labelVFX" data-filter="labelVFX">VFX</button>
                 <button class="filter-btn label labelShader" data-filter="labelShader">Shaders</button>
+                <button class="filter-btn label labelPipeline" data-filter="labelPipeline">3D Pipeline</button>
+                <button class="filter-btn label labelTooling" data-filter="labelTooling">Tooling</button>
                 <button class="filter-btn label labelDesign" data-filter="labelDesign">Design</button>
                 <button class="filter-btn label labelCoding" data-filter="labelCoding">Coding</button>
-                <button class="filter-btn label labelTooling" data-filter="labelTooling">Tooling</button>
-                <button class="filter-btn label labelPipeline" data-filter="labelPipeline">3D Pipeline</button>
             </div>
         </div>
 
-        <!-- 
         <div class="piece" data-category="professional">
             <h2 class="title">Rust Ltd.</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
-                <source src="Gifs/Redacted%20Gifs.mp4" type="video/mp4">
+                <source src="Gifs/footlong.mov" type="video/mp4">
             </video>
             <div class="labels">
                 <span class="label labelVFX">Visual Effects</span>
@@ -101,10 +100,17 @@
                 <span class="label labelPipeline">3D Pipeline</span>
             </div>
            <div class="bullets">
-               <p>I'm currently contracted with Rust Ltd. as a VFX Artist on H3VR2, the highly anticipated sequel to Hot Dogs, Horseshoes & Hand Grenades — one of the most beloved and technically ambitious VR shooters ever made. Working within a muted-realist aesthetic, I've been crafting performant real-time VFX with a strong focus on texture discipline and rendering efficiency. This includes building procedural flipbook pipelines using Blender and Material Maker, packing multiple visual elements into single VFX cards to minimise overdraw, and baking bloom directly into textures to eliminate post-processing overhead without sacrificing visual quality. </p><br>
+                <p>Currently contracted with Rust Ltd. as a VFX Artist on H3VR2, the highly anticipated sequel to Hot Dogs, Horseshoes & Hand Grenades. </p><br>
+                <p>While working with a team of acclaimed VR veterans my focus has been on creating VFX with a muted-realist aesthetic, while breaking through mobile VR constraints to achieve performant real-time VFX for all our ballistic needs. </p><br>
+                <p>I'm building out procedural flipbook pipelines using Blender and Material Maker, packing multiple visual elements into single VFX cards to minimise overdraw, and baking bloom directly into textures to eliminate post-processing overhead without sacrificing on visual quality. </p><br>
+                <a href="https://h3vr2.com/">
+                    <p class="link">Checkout H3VR2 here!</p>
+               </a>
+               <a href="https://store.steampowered.com/app/450540/Hot_Dogs_Horseshoes__Hand_Grenades/">
+                    <p class="link">Or go play the original H3VR</p>
+               </a>
             </div>
         </div>
-        -->
         
         <div class="piece" data-category="professional">
             <h2 class="title">Cloudhead Games</h2>
@@ -117,10 +123,27 @@
                 <span class="label labelTooling">Tooling</span>
             </div>
            <div class="bullets">
-               <p>During my time at Cloudhead Games I worked on a VR title built for Meta Quest, contributing real-time shaders, gameplay-driven VFX, and pipeline tooling across a fast-moving production. </p><br>
-               <p>A highlight was implementing a multi-stage enemy respawn sequence... A mechanic with layered narrative timings that required coordinating between Art, Engineering, and Design to map game state transitions of a custom dissolve shader system. I precisely synced material swaps, shader properties, and particle systems with each phase of the spawning events. </p><br>
+               <p>At Cloudhead Games I worked on various VR projects built for Meta Quest, contributing real-time shaders, gameplay-driven VFX, and pipeline tooling across  production. </p><br>
+               <p>A highlight was implementing a multi-stage enemy respawn sequence that required coordinating between Art, Engineering, and Design to map game state transitions on a custom dissolve shader system. Precisely syncing material swaps, shader property transitions, and particle systems with each phase of the event. </p><br>
                <p>On the tooling side, I built a normal map packing utility that merged a main and detail map into a single RGBA texture, helping to reduce the number of texture samplers needed in our character shader. </p><br>
                <p>Due to our NDA I can't share visuals publicly, but I'm happy to walk through the work in detail during a call.</p>
+            </div>
+        </div>
+
+         <div class="piece" data-category="professional personal">
+            <h2 class="title">Shader Playground</h2>
+            <video loop="loop" class="media" autoplay muted playsinline>
+                <source src="Gifs/shaders.mp4" type="video/mp4">
+            </video>
+            <div class="labels">
+                <span class="label labelShader">Shaders</span>
+                <span class="label labelTooling">Tooling</span>
+                <span class="label labelCoding">Coding</span>
+            </div>
+           <div class="bullets">
+               <p>An exploration of shader techniques using OpenGL and custom rendering engines built with C++ and Python.</p><br> 
+               <p>Using these handmade OpenGL renderers I've been experimenting with noise, raymarching, matrix transformations, and other techniques to produce visual effects using mostly GLSL.</p><br>
+               <p>These experiments also include attaching custom hardware, like an old DJ Hero found at a thrift shop, to control the parameters and explore low level hardware configurations. Some exploration of basic VR controller implementations is also an active area of interest.</p>
             </div>
         </div>
 
@@ -144,23 +167,6 @@
                </a>
             </div>
         </div>
-
-        <div class="piece" data-category="professional personal">
-            <h2 class="title">Shader Playground</h2>
-            <video loop="loop" class="media" autoplay muted playsinline>
-                <source src="Gifs/shaders.mp4" type="video/mp4">
-            </video>
-            <div class="labels">
-                <span class="label labelShader">Shaders</span>
-                <span class="label labelCoding">Coding</span>
-                <span class="label labelVFX">Visual Effects</span>
-                <span class="label labelTooling">Tooling</span>
-            </div>
-           <div class="bullets">
-               <p>An exploration of shader techniques.</p><br> 
-               <p>Using a handmade OpenGL C++ renderer I've been experimenting with noise, raymarching, matrix transformations, and other techniques to produce visual effects using mostly GLSL.</p>
-            </div>
-        </div>
         
         <div class="piece" data-category="personal">
             <h2 class="title">Cylindris</h2>
@@ -168,13 +174,14 @@
                 <source src="Gifs/cylindris2.mp4" type="video/mp4">
             </video>
             <div class="labels">
+                <span class="label labelTooling">Tooling</span>
                 <span class="label labelDesign">Design</span>
                 <span class="label labelCoding">Coding</span>
-                <span class="label labelTooling">Tooling</span>
                 
             </div>
            <div class="bullets">
                <p>A VR Tetris clone in its full cylindrical glory.</p><br>
+               <p>Received a small funding grant from the CMF to build out this prototype.</p><br>
                <p>This experiment was a proof of concept aimed at solving the complex problem of bringing the 2D classic into a fully immersive VR experience. Built with the Godot game engine, with a focus on minimal gesture based controls.</p><br>
                <a href="https://zedpoirier.itch.io/cylindris">
                     <p class="link">Download a build for SteamVR or Quest!</p>
@@ -188,8 +195,9 @@
                 <source src="Gifs/peopoli.mov" type="video/mp4">
             </video>
             <div class="labels">
-                <span class="label labelPipeline">3D Pipeline</span>
+                <span class="label labelVFX">Visual Effects</span>
                 <span class="label labelShader">Shaders</span>
+                <span class="label labelPipeline">3D Pipeline</span>
                 <span class="label labelTooling">Tooling</span>
             </div>
            <div class="bullets">
@@ -207,35 +215,41 @@
                 <source src="Gifs/seasonspree.mov" type="video/mp4">
             </video>
             <div class="labels">
-                <span class="label labelShader">Shaders</span>
                 <span class="label labelVFX">Visual Effects</span>
+                <span class="label labelShader">Shaders</span>
                 <span class="label labelTooling">Tooling</span>
             </div>
            <div class="bullets">
                <p>Cozy, cute, and chill game made with Unity. </p><br>
-               <p>Created a variety of bespoke shaders and visual effects to enhance the enviroments of the game world.</p><br> 
-               <a href="https://store.steampowered.com/app/1531340/Seasonspree/">
+               <p>Created a variety of bespoke shaders and visual effects to enhance the enviroments of the game world.</p><br>
+               <p>Such as, the custom hatchtone shader to all 3D elements, a ice shader with a faux depth effect, and a grass painting system that hooks into Unity's Polybrush toolset seamlessly for vertex painting grass into the world.</p><br>
+                <a href="https://store.steampowered.com/app/1531340/Seasonspree/">
                     <p class="link">Play Seasonspree on Steam Now!</p>
                </a>
             </div>
         </div>
 
-        <!--
         <div class="piece" data-category="professional">
             <h2 class="title">Battle Goat</h2>
             <video loop="loop" class="media" autoplay muted playsinline>
-                <source src="Gifs/Redacted%20Gifs.mp4" type="video/mp4">
+                <source src="Gifs/battelgoat.mov" type="video/mp4">
             </video>
             <div class="labels">
                 <span class="label labelVFX">Visual Effects</span>
                 <span class="label labelShader">Shaders</span>
                 <span class="label labelPipeline">3D Pipeline</span>
+                <span class="label labelCoding">Coding</span>
             </div>
            <div class="bullets">
-               <p>At BattleGoat Studios I contributed technical art and shader work to Galactic Ruler, a sci-fi grand strategy title and spin-off of the Supreme Ruler franchise. A personal highlight was authoring a 4D noise-based shader to animate seamless, continuously flowing star surfaces for celestial bodies — a technically interesting problem that required thinking carefully about how noise functions behave across four dimensions to avoid visible tiling or repetition. I also implemented VFX trigger systems directly in C++ within BattleGoat's custom proprietary engine, and researched art pipeline workflows for integrating assets into their engine-native production environment. </p><br>
+                <p>At BattleGoat Studios I contributed technical art and shader work to Galactic Ruler, a sci-fi grand strategy title and spin-off of the Supreme Ruler franchise. </p><br>
+                <p>A personal highlight was authoring a 4D noise-based shader to animate a seamless, continuously flowing 3D star surfaces for celestial bodies, a technically delightful math problem that required thinking carefully about how noise functions behave across four dimensions to avoid visible tiling or repetition.</p><br>
+                <p>I also implemented VFX trigger systems directly in C++ within BattleGoat's custom proprietary game engine, and researched art pipeline workflows for integrating art assets into their production environment.</p><br>
+                <a href="https://store.steampowered.com/app/1138440/Galactic_Ruler/">
+                    <p class="link">Play Galactic on Steam Now!</p>
+               </a>
             </div>
         </div>
-        -->
+
 
         <div class="piece" data-category="personal">
             <h2 class="title">Flicker VR</h2>
@@ -243,16 +257,18 @@
                 <source src="Gifs/flicker.mp4" type="video/mp4">
             </video>
             <div class="labels">
+                <span class="label labelVFX">Visual Effects</span>
+                <span class="label labelPipeline">3D Pipeline</span>
                 <span class="label labelDesign">Design</span>
                 <span class="label labelCoding">Coding</span>
-                <span class="label labelPipeline">3D Pipeline</span>
             </div>
            <div class="bullets">
-               <p>An assymetrical local multiplater VR game.</p><br> 
-               <p>One player explores the haunted house to uncover its mysteries, while the other player haunts and stalks the intruder to its domain.</p><br>
+                <p>A college capstone project back in 2019, where I lead a team in creating an assymetrical local multiplater VR game.</p><br> 
+                <p>One player uses VR to explore the haunted house and uncover the mysteries, while the other player uses mouse and keyboard on the same PC, to haunt, stalk, and kill the intruder to its domain.</p><br>
+                <p>I was responsible for team management as well as the bulk of the coding on the project. I kicked off the project by completing a functional prototype using the HTC Vive headset and Unity to prove that an assymetrical setup on a single PC was viable.</p><br>
                 <a href="https://zedpoirier.itch.io/flicker-vr">
                     <p class="link">Download from Itch.io</p>
-               </a>
+                </a>
             </div>
         </div>
         
@@ -262,9 +278,9 @@
                 <source src="Gifs/Plinko.mp4" type="video/mp4">
             </video>
             <div class="labels">
-                <span class="label labelCoding">Coding</span>
                 <span class="label labelVFX">Visual Effects</span>
                 <span class="label labelTooling">Tooling</span>
+                <span class="label labelCoding">Coding</span>
             </div>
            <div class="bullets">
                 <p>A physics based plinko game clone where a tumbleweed travels across different lands by the power of the wind.</p><br>
