@@ -24,11 +24,11 @@ a:hover{
     grid-column-gap: 15px;
     grid-template-rows: auto;
     grid-template-areas: 
-        "title title"
-        "media media"
-        "bullets bullets"
-        "bar bar"
-        "icons icons";
+        "title"
+        "media"
+        "bullets"
+        "bar"
+        "icons";
 }
 
 .altLabel {
