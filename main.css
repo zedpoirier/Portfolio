@@ -62,7 +62,7 @@ body {
     grid-area: bullets;
     padding-bottom: 10px;
 }
-
+ 
 .connect{
     grid-area: connect;
     padding-top: 5px;
@@ -147,29 +147,31 @@ h2 {
 
 .icons {
     grid-area: icons;
-    display: inline-block;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    grid-template-areas: 
-        "icon icon icon icon icon icon";
+    gap: 5px 5px;
 }
 
 .icon {
     transition: opacity 0.15s ease, filter 0.15s ease;
+    height: 60px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+.icon-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
 }
 
 a:hover .icon {
     opacity: 0.85;
     filter: brightness(1.4) invert(0.4);
-}
-
-.tagg {
-    width: auto;
-    margin: auto;
-    font-size: 12px;
-    text-align: center;
 }
 
 .label {
@@ -265,16 +267,25 @@ p {
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile only - outside your media query */
+
 .media.profile-img {
-    height: 400px; /* adjust to taste */
+    height: 400px; 
     object-fit: cover;
-    object-position: center top; /* keeps your face in frame */
+    object-position: center top; 
 }
 
 .mobile-break {
     display: block;
 }
+
+
+.tagg {
+    font-size: 12px;
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+
 
 .title {
     grid-area: title;
@@ -337,6 +348,10 @@ p {
     .filter-group:first-child .filter-btn {
         font-size: 18px;
         padding: 7px 14px;
+    }
+
+    .icons {
+        gap: 5px 40px;
     }
     
     .label {
