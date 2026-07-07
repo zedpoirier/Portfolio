@@ -20,7 +20,7 @@ a:hover{
 .about {
     margin-bottom: 15px;
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: auto;
     grid-column-gap: 15px;
     grid-template-rows: auto;
     grid-template-areas: 
